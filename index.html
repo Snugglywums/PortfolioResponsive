@@ -8,11 +8,24 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+<!--- Header section with nav links -->
+<header>
+	<h1 id="Home">Raven McGuffin</h1>
+	<nav>
+		<ul id="menu">
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#AboutMe">About</a></li>
+			<li><a href="#Project">Project</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
 
+<!--- Main Content -->
 <body>
 	<main>
-    <h1>Raven McGuffin</h1>
-<!-- Intro Section -->		
+
+<!--- Intro -->
     <section>
 			<h2>Intro</h2>
 			<div class="group">
@@ -28,11 +41,9 @@
 			</div>
     </section>
 
-
-
+<!--- About Me -->
     <section>
-			<h2>About Me</h2>
-   <!-- About Me Section -->	
+			<h2 id="AboutMe">About Me</h2>
 			<div class="group">
 				<div class="item">
 					<h3>My Hobbies</h3>
@@ -52,11 +63,9 @@
 			</div>
 		</section>
 
+<!--- Project section  -->
 		<section>
-
-	  <h2>Project Title - Coming Soon!</h2>	
-			
-<!-- Project Section Under Construction -->				
+	  <h2 id="Project">Project Title - Coming Soon!</h2>	
 	  <div class="group">				  
 		  <div class="item">
 			  <h3>Project Description</h3>
@@ -68,9 +77,25 @@
 		  </div>
 		</section>
 
+<!--- Contact section-->
 		  <section>
-			<h2>Contact</h2>
-	<!-- Contact Section -->	
+			<h2 id="Contact">Contact</h2>
+<!--- Contact Form  -->
+			<div class="item">
+				<form action="https://formspree.io/xpzyepno" method="POST" >
+				<label for="user-name">Name:</label>
+				<input id="user-name" type="text" name="name">
+	  
+				<label for="user-email">Email:</label>
+				<input id="user-email" type="text" name="_replyto">
+
+					
+				<label for="user-message">Your message:</label>
+				<textarea id="message" name="message"></textarea>
+				<button class="myButton" type="submit">Submit</button>
+			  </form>
+			</div>
+<!--- Contact Links -->
 			<div class="group">
 				<div class="item">
 					<h3>Email</h3>
@@ -96,6 +121,7 @@
 		</section>  
     
 	</main>
-	<script src="script.js"></script>
+	<script src="script.js">
+	</script>
 </body>
 </html>
