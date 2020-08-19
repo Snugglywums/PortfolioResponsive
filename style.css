@@ -1,0 +1,99 @@
+main {
+  padding: 20px 0;
+  background-color: #a2b5b8;
+}
+
+section {
+  margin-bottom: 100px;
+  background-color: #cadedd;
+}
+
+h1 {
+  margin: 0 0 30px 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Lobster', 'papyrus', cursive;
+}
+
+h2 {
+  margin: 0 10px;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+  border-style: inset;
+  font-family: 'Lucida Handwriting',  cursive;
+}
+
+h3 {
+  margin: 12px 0;
+  font-size: 25px;
+  border-bottom: 2px solid #9da1a3;
+}
+
+/* Groups & Items */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+
+img {
+  width: 20%;
+  height: 50%;   
+ }
+
+p {
+  font-size: 20px;
+    font-family: 'Dancing Script', 'Goudy Old Style', cursive;  
+ }
+
+ /*these are for the links*/
+ a:link {
+    color: #0f0c0c
+}
+
+a:visited {
+    color: #19d1ff;
+}
+
+a:hover {
+    font-size: 30px;
+}
+
+/*Media Screen Settings*/
+ 
+ @media all and (min-width: 800px) {
+   p {
+     font-size: 20px;
+   }
+ }
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+
+  section, h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+}
+
+ /* this is for mobile screens */
+ @media all and (min-width: 600px) {
+  p {
+    font-size: 20px;
+  }
+}
